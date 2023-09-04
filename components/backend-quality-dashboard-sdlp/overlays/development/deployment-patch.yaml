@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: backend-quality-dashboard-sdlp
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-qaqk-tenant/mc-quality-dashboard/backend-quality-dashboard-sdlp@sha256:362d9227900e95baae93ea8f71ac07ffcc4fef852b3896e002826f2a9fae89bd
+        name: container-image
+        resources: {}
+status: {}
